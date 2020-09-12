@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stray Kids Quiz</title>
+<style>
+body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-color: black;
+color: white;
+text-align: center;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+
+
+</head>
+<body>
+<div id="main">
+<div id="header">
+<h1>Choose your player!</h1>
+</div>
+<form id="form1">
+
+<h2>What is your favorite color?</h2>
+	<label for="var_BangChan"><input type="radio" name="variable" value="1" id="var_BangChan" />Blue</label>
+	<label for="var_Felix"><input type="radio" name="variable" value="2" id="var_Felix" />Red</label>
+	<label for="var_Seungmin"><input type="radio" name="variable" value="3" id="var_Seungmin" />Pink</label>
+	<label for="var_Hyunjin"><input type="radio" name="variable" value="4" id="var_Hyunjin"/>Yellow</label>
+	<label for="var_Changbin"><input type="radio" name="variable" value="5" id="var_Changbin"/>Purple</label>
+	<label for="var_Minho"><input type="radio" name="variable" value="6" id="var_Minho"/>Black</label>
+	<label for="var_Jisung"><input type="radio" name="variable" value="7" id="var_Jisung"/>Green</label>
+	<label for="var_Jeongin"><input type="radio" name="variable" value="8" id="var_Jeongin"/>Other</label>
+	
+
+	
+<h2>What do you like to do in your free time?</h2>
+	<label for="cat_BangChan"><input type="radio" name="con" value="1" id="cat_BangChan"/>Listening to music</label>
+	<label for="cat_Felix"><input type="radio" name="con" value="2" id="cat_Felix" />Readig</label>
+	<label for="cat_Seungmin"><input type="radio" name="con" value="3" id="cat_Seungmin" />Taking pictures</label>
+	<label for="cat_Hyunjin"><input type="radio" name="con" value="4" id="cat_Hyunjin"/>Eating</label>
+	<label for="cat_Changbin"><input type="radio" name="con" value="5" id="cat_Changbin"/>Drawing</label>
+	<label for="cat_Minho"><input type="radio" name="con" value="6" id="cat_Minho"/>Dancing</label>
+	<label for="cat_Jisung"><input type="radio" name="con" value="7" id="cat_Jisung"/>Having fun with my friends</label>
+	<label for="cat_Jeongin"><input type="radio" name="con" value="8" id="cat_Jeongin"/>Binge-watching</label>
+	
+<h2>Do you believe that there are more realities?</h2>
+	<label for="sub_BangChan"><input type="radio" name="sub" value="1" id="sub_BangChan"/>Yes</label>
+	<label for="sub_Felix"><input type="radio" name="sub" value="2" id="sub_Felix" />No</label>
+	<label for="sub_Seungmin"><input type="radio" name="sub" value="3" id="sub_Seungmin" />What is this question?</label>
+	<label for="sub_Hyunjin"><input type="radio" name="sub" value="4" id="sub_Hyunjin"/>I believe what I see</label>
+	<label for="sub_Changbin"><input type="radio" name="sub" value="5" id="sub_Changbin"/>I have never heard of it</label>
+	<label for="sub_Minho"><input type="radio" name="sub" value="6" id="sub_Minho"/>I don't know, but what is that clicking sound?</label>
+	<label for="sub_Jisung"><input type="radio" name="sub" value="7" id="sub_Jisung"/>I will ask my friends about it</label>
+	<label for="sub_Jeongin"><input type="radio" name="sub" value="8" id="sub_Jeongin"/>I want to believe</label>
+
+<h2>Which weather do you like the best?</h2>
+	<label for="if_BangChan"><input type="radio" name="ifstate" value="1" id="if_BangChan"/>Cloudy</label>
+	<label for="if_Felix"><input type="radio" name="ifstate" value="2" id="if_Felix" />Cold</label>
+	<label for="if_Seungmin"><input type="radio" name="ifstate" value="3" id="if_Seungmin" />Foggy</label>
+	<label for="if_Hyunjin"><input type="radio" name="ifstate" value="4" id="if_Hyunjin"/>Mild</label>
+	<label for="if_Changbin"><input type="radio" name="ifstate" value="5" id="if_Changbin"/>Rainy</label>
+	<label for="if_Minho"><input type="radio" name="ifstate" value="6" id="if_Minho"/>Breezy</label>
+	<label for="if_Jisung"><input type="radio" name="ifstate" value="7" id="if_Jisung"/>Sunny</label>
+	<label for="if_Jeongin"><input type="radio" name="ifstate" value="8" id="if_Jeongin"/>Snowy</label>
+
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+    
+<p>Your results:<span id="grade">__</span></p>
+<p id="grade2"></p>
+
+</div>
+</body>
+</html>
+
