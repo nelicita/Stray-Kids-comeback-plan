@@ -108,6 +108,67 @@ margin-top: 20px;
 <p>Your results:<span id="grade">__</span></p>
 <p id="grade2"></p>
 
+
+
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	   
+	   
+	   result = variable + sub + con + ifstate;
+	   
+	document.getElementById("grade").innerHTML = result;
+
+ grading = [
+	   {score:4,feedback:"Congratulations! You got Bang Chan!", image: "BangChan.jpg"},
+	   {score:5,feedback:"Congratulations! You got Felix!", image: "Felix.jpg"},
+	   {score:6, feedback:"Congratulations! You got Felix!", image: "Felix.jpg"},
+	   {score:7, feedback:"Congratulations! You got Felix!", image: "Felix.jpg"},
+	   {score:8, feedback:"Congratulations! You got Felix!", image: "Felix.jpg"},
+	   {score:9, feedback:"Congratulations! You got Seungmin!", image: "Seungmin.jpg"},
+	   {score:10, feedback:"Congratulations! You got Seungmin!", image: "Seungmin.jpg"},
+	   {score:11, feedback:"Congratulations! You got Seungmin!", image: "Seungmin.jpg"},
+	   {score:12, feedback:"Congratulations! You got Seungmin!", image: "Seungmin.jpg"},
+	   {score:13,feedback:"Congratulations! You got Hyunjin!", image: "Hyunjin.jpg"},
+	   {score:14,feedback:"Congratulations! You got Hyunjin!", image: "Hyunjin.jpg"},
+	   {score:15,feedback:"Congratulations! You got Hyunjin!", image: "Hyunjin.jpg"},
+	   {score:16,feedback:"Congratulations! You got Hyunjin!", image: "Hyunjin.jpg"},
+	   {score:17,feedback:"Congratulations! You got Changbin!", image: "Changbin.jpg"},
+	   {score:18,feedback:"Congratulations! You got Changbin!", image: "Changbin.jpg"},
+	   {score:19,feedback:"Congratulations! You got Changbin!", image: "Changbin.jpg"},
+	   {score:20,feedback:"Congratulations! You got Changbin!", image: "Changbin.jpg"},
+	   {score:21,feedback:"Congratulations! You got Minho!", image: "Minho.jpg"},
+	   {score:22,feedback:"Congratulations! You got Minho!", image: "Minho.jpg"},
+	   {score:23,feedback:"Congratulations! You got Minho!", image: "Minho.jpg"},
+	   {score:24,feedback:"Congratulations! You got Minho!", image: "Minho.jpg"},
+	   {score:25,feedback:"Congratulations! You got Jisung!", image: "Jisung.jpg"},
+	   {score:26,feedback:"Congratulations! You got Jisung!", image: "Jisung.jpg"},
+	   {score:27,feedback:"Congratulations! You got Jisung!", image: "Jisung.jpg"},
+	   {score:28,feedback:"Congratulations! You got Jisung!", image: "Jisung.jpg"},
+	   {score:29,feedback:"Congratulations! You got Jeongin!", image: "Jeongin.jpg"},
+	   {score:30,feedback:"Congratulations! You got Jeongin!", image: "Jeongin.jpg"},
+	   {score:31,feedback:"Congratulations! You got Jeongin!", image: "Jeongin.jpg"},
+	   {score:32,feedback:"Congratulations! You got Jeongin!", image: "Jeongin.jpg"},
+	   ];
+	  
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+	  }
+	  }
+
+
+document.getElementById("grade2").innerHTML = result2; 
+
+return false; 
+} 
+
+</script>
 </div>
 </body>
 </html>
